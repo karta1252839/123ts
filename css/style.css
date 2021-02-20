@@ -49,7 +49,7 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
     transition: all .3s ease-out;
 }
 
-/* body -------------------------------------------------------- */
+/* 通用 -------------------------------------------------------- */
 
 .bgc-flex {
     position: relative;
@@ -77,4 +77,24 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
     align-content: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
+}
+
+.lp1 {
+    letter-spacing: .1em;
+}
+
+.lp2 {
+    letter-spacing: .2em;
+}
+
+/* body -------------------------------------------------------- */
+
+/* index -------------------------------------------------------- */
+
+.bgc-header-color {
+    background-color: #f8f2ec;
+}
+
+.bgc-body-color {
+    background-color: #ebdef2;
 }

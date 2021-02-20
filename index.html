@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
 
     <!-- UK JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script> -->
 
     <!-- JQ -->
@@ -30,59 +30,399 @@
     <!-- <script src="./js/Addhtml.js"></script> -->
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+
     <title>123ts</title>
     <style>
-        .input-style {
-            border: 1px solid #9383f3;
-            border-radius: 3.5px;
-        }
-
-        .input-style::placeholder {
-            color: #fff;
-            font-size: 14px;
-        }
-
-        .input-size {
-            width: 100px;
-            height: 38px;
-        }
     </style>
 </head>
 
 <body>
-    <!-- /////////////////////////////////////// 電腦板 ///////////////////////////////////// -->
+
+    <!-- 電腦板 header ------------------------------------------------------------------------>
     <!-- login ------------------------------------>
-    <header>
-        <div class="container-fluid d-none d-md-block p-0" style="background-color:#f8f2ec;">
-            <div class="container">
-                <div class="row py-3">
-                    <div class="col-12 text-right">
-                        <!-- 帳號 -->
-                        <input type="text" class="px-2 input-style" style="background-color: #efbe6c;"
-                            placeholder="用戶名(ID)" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = '用戶名(ID)'" />
-                        <!-- 密碼 -->
-                        <input type="password" class="px-2 input-style" style="background-color: #7dd2e8;"
-                            placeholder="密碼" onfocus="this.placeholder = ''" onblur="this.placeholder = '密碼'" />
-                        <!-- 記住 -->
-                        <input class="ml-2" type="checkbox" name="記住" id="">
-                        <p class="d-inline">記住</p>
-                        <!-- 登入 -->
-                        <a href="../reb/page/indexLogin.html"><input class="input-size ml-2 text-center"
-                                style="background-image: url(./img/桌機index_img/btn登入.png);color: #efbe6c;" type="submit"
-                                value="登入"></a>
-                        <a href="./header page/Signup.html"><input class="input-size ml-2 text-center"
-                                style="background-image: url(./img/桌機index_img/btn注冊.png);color: #fd788e;" type="button"
-                                value="註冊"></a>
+    <div class="container-fluid d-none d-md-block p-0 bgc-header-color">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-12 text-right">
+                    <!-- 帳號 -->
+                    <input type="text" class="px-2 input-style" style="background-color: #efbe6c;" placeholder="用戶名(ID)"
+                        onfocus="this.placeholder = ''" onblur="this.placeholder = '用戶名(ID)'" />
+                    <!-- 密碼 -->
+                    <input type="password" class="px-2 input-style" style="background-color: #7dd2e8;" placeholder="密碼"
+                        onfocus="this.placeholder = ''" onblur="this.placeholder = '密碼'" />
+                    <!-- 記住 -->
+                    <input class="ml-2" type="checkbox" name="記住" id="">
+                    <p class="d-inline">記住</p>
+                    <!-- 登入 -->
+                    <a href="../reb/page/indexLogin.html"><input class="input-size ml-2 text-center"
+                            style="background-image: url(./img/桌機index_img/btn登入.png);color: #efbe6c;" type="submit"
+                            value="登入"></a>
+                    <a href="./header page/Signup.html"><input class="input-size ml-2 text-center"
+                            style="background-image: url(./img/桌機index_img/btn注冊.png);color: #fd788e;" type="button"
+                            value="註冊"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LG Navigation Bars ------------------------------------>
+    <div class="container-fluid d-none d-lg-block p-0 bgc-header-color NavigationBorder">
+        <div class="container">
+            <div class="row" style="align-items:center;">
+                <div class="col-3">
+                    <a class="" href="./index.html"><img class="w-100" src="./img/桌機index_img/LOGO.png"></a>
+                </div>
+                <div class="col-9">
+                    <div class="row mx-auto">
+                        <a class="col py-2 centerCenter listHove" href="./page/LiveCasino.html"><img class="img-fluid"
+                                src="./img/桌機index_img/list1.png" alt=""></a>
+                        <a class="col py-2 centerCenter listHove" href="./page/Sport.html"><img class="img-fluid"
+                                src="./img/桌機index_img/list2.png" alt=""></a>
+                        <a class="col py-2 centerCenter listHove" href="./page/Chess.html"><img class="img-fluid"
+                                src="./img/桌機index_img/list3.png" alt=""></a>
+                        <a class="col py-2 centerCenter listHove" href="./page/Slot.html"><img class="img-fluid"
+                                src="./img/桌機index_img/list4.png" alt=""></a>
+                        <a class="col py-2 centerCenter listHove" href="./page/Bingo.html"><img class="img-fluid"
+                                src="./img/桌機index_img/list5.png" alt=""></a>
+                        <a class="col py-2 centerCenter listHove" href="./page/Fish.html"><img class="img-fluid"
+                                src="./img/桌機index_img/list6.png" alt=""></a>
+                        <a class="col py-2 centerCenter listHove" href="./page/MainPages.html"><img class="img-fluid"
+                                src="./img/桌機index_img/list7.png" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
-    <!-- login ------------------------------------>
+    <!-- banner -->
+    <div class="container-fluid p-0 d-none d-md-block">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/桌機index_img/banner.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/桌機index_img/banner1.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/桌機index_img/banner2.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
 
 
+    <!-- 手機板 header ------------------------------------------------------------------------>
+    <!-- MD Navigation Bars ------------------------------------>
+    <div class="container-fluid p-0 d-lg-none bgc-header-color MdNavigationBorder">
+        <div class="container">
+            <div class="row py-2" style="align-items: center;">
+                <!-- 漢堡圖 -->
+                <div class="col-4 text-left">
+                    <!-- HamburgBtn -->
+                    <i class="fas fa-bars fa-2x" style="color: #fb98ac;" id="HamburgBtn" data-toggle="modal"
+                        data-target="#exampleModal0"></i>
+                    <!-- HamburgBtn modal -->
+                    <div class="modal" id="exampleModal0">
+                        <div id="showMenu p-0" class="modal-dialog">
+                            <div class="showMenuList modal-content">
+                                <div class="modal-body p-0 m-0">
+                                    <!-- 關閉 -->
+                                    <!-- <div class="w-100">
+                                        <div class="pb-2 pt-1 pr-3 text-light text-right" data-dismiss="modal"><i
+                                                class="fas fa-times text-light"></i></div>
+                                    </div> -->
+                                    <!-- 派大金logo -->
+                                    <div class="row m-0 px-5 py-3 bgc-body-color hamburg-border-bottom"
+                                        style="box-shadow: 0 1px 5px rgba(83, 83, 83, 0.041);">
+                                        <img class="centerCenter img-fluid" src="./img/手機index_img/派大金LOGO2.png" alt="">
+                                    </div>
+                                    <div class="row clearfix m-0">
+                                        <div class="col-12 p-3 hamburg-border-bottom w-100">
+                                            <a class="py-3 pl-1 text-decoration-none" href="./page/Promotion.html">
+                                                <img class="img-fluid pl-3" src="./img/手機index_img/icon1-home.png"
+                                                    alt="">
+                                                <span class="pl-3 h5" style="color: #fb98ac;">首頁</span>
+                                                <div class="float-right"><i class="fas fa-angle-right"
+                                                        style="color: #fb98ac;"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix m-0">
+                                        <div class="col-12 p-3 hamburg-border-bottom w-100">
+                                            <a class="py-3 pl-1 text-decoration-none" href="./page/Promotion.html">
+                                                <img class="img-fluid pl-3" src="./img/手機index_img/icon2-promo.png"
+                                                    alt="">
+                                                <span class="pl-3 h5" style="color: #efbe6c;">優惠活動</span>
+                                                <div class="float-right"><i class="fas fa-angle-right"
+                                                        style="color: #efbe6c;"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix m-0">
+                                        <div class="col-12 p-3 hamburg-border-bottom w-100">
+                                            <a class="py-3 pl-1 text-decoration-none" href="./page/Promotion.html">
+                                                <img class="img-fluid pl-3"
+                                                    src="./img/手機index_img/icon3-maintenance.png" alt="">
+                                                <span class="pl-3 h5" style="color: #7dd2e8;">維護時間</span>
+                                                <div class="float-right"><i class="fas fa-angle-right"
+                                                        style="color: #7dd2e8;"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix m-0">
+                                        <div class="col-12 p-3 hamburg-border-bottom w-100">
+                                            <a class="py-3 pl-1 text-decoration-none" href="./page/Promotion.html">
+                                                <img class="img-fluid pl-3" src="./img/手機index_img/icon4-faq.png"
+                                                    alt="">
+                                                <span class="pl-3 h5" style="color: #9383f3;">常見問題</span>
+                                                <div class="float-right"><i class="fas fa-angle-right"
+                                                        style="color: #9383f3;"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix m-0">
+                                        <div class="col-12 p-3 hamburg-border-bottom w-100">
+                                            <a class="py-3 pl-1 text-decoration-none" href="./page/Promotion.html">
+                                                <img class="img-fluid pl-3" src="./img/手機index_img/icon5-blog.png"
+                                                    alt="">
+                                                <span class="pl-3 h5" style="color: #fb98ac;">部落格</span>
+                                                <div class="float-right"><i class="fas fa-angle-right"
+                                                        style="color: #fb98ac;"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix m-0">
+                                        <div class="col-12 p-3 hamburg-border-bottom w-100">
+                                            <a class="py-3 pl-1 text-decoration-none" href="./page/Promotion.html">
+                                                <img class="img-fluid pl-3" src="./img/手機index_img/icon6-appdl.png"
+                                                    alt="">
+                                                <span class="pl-3 h5" style="color: #efbe6c;">APP下載</span>
+                                                <div class="float-right"><i class="fas fa-angle-right"
+                                                        style="color: #efbe6c;"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix m-0">
+                                        <div class="col-12 p-3 hamburg-border-bottom w-100">
+                                            <a class="py-3 pl-1 text-decoration-none" href="./page/Promotion.html">
+                                                <img class="img-fluid pl-3" src="./img/手機index_img/icon7-agent.png"
+                                                    alt="">
+                                                <span class="pl-3 h5" style="color: #7dd2e8;">合營代理</span>
+                                                <div class="float-right"><i class="fas fa-angle-right"
+                                                        style="color: #7dd2e8;"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix m-0">
+                                        <div class="col-12 p-3 hamburg-border-bottom w-100">
+                                            <a class="py-3 pl-1 text-decoration-none" href="./page/Promotion.html">
+                                                <img class="img-fluid pl-3"
+                                                    src="./img/手機index_img/icon8-Vector Smart Object.png" alt="">
+                                                <span class="pl-3 h5" style="color: #9383f3;">關於派大金</span>
+                                                <div class="float-right"><i class="fas fa-angle-right"
+                                                        style="color: #9383f3;"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix m-0">
+                                        <div class="col-12 p-3 w-100">
+                                            <a class="py-3 pl-1 text-decoration-none" href="./page/Promotion.html">
+                                                <img class="img-fluid pl-3"
+                                                    src="./img/手機index_img/icon9-sign-out-light.png" alt="">
+                                                <span class="pl-3 h5" style="color: #fb98ac;">登出</span>
+                                                <div class="float-right"><i class="fas fa-angle-right"
+                                                        style="color: #fb98ac;"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- LOGO -->
+                <div class="col-4 text-center">
+                    <div class="text-center" style="margin-left: -5%;"><a href="./index.html"><img
+                                src="./img/手機index_img/派大金logo-01.png" alt="" class="img-fluid"></a></div>
+                </div>
+                <!-- 24HR客服 -->
+                <div class="col-4">
+                    <div class="text-right mr-3"><img id="hrServiceBtn"
+                            src="./img/手機index_img/customer-service-a7d0504b43f7ddc70ea0e842b08809f4.png" alt=""
+                            class="img-fluid" data-toggle="modal" data-target="#exampleModal"></div>
+                </div>
+                <!-- 24HR客服 Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content mx-auto w-75"
+                            style="position: fixed !important;top: 6% !important; left: 10% !important;right: 10% !important;">
+                            <!-- 聯繫我們 -->
+                            <div class="modal-header bgc-header-color">
+                                <p class="modal-title m-auto w3-text-pink" id="exampleModalLabel"
+                                    style="font-size: 1.2rem !important;">聯繫我們
+                                </p>
+                            </div>
+                            <!-- img -->
+                            <div class="modal-body p-0">
+                                <img src="./img/手機index_img/客服側邊-02.png" alt="" class="w-100">
+                            </div>
+                            <!-- Close -->
+                            <div class="w-100 bgc-header-color">
+                                <div class="py-2 text-center w3-text-pink" data-dismiss="modal">Close</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div class="container-fluid p-0 d-md-none MdNavigationBorder">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/手機index_img/banner.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/手機index_img/banner1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/手機index_img/banner2.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 相通 ------------------------------------------------------------------------>
+    <!-- marquee -->
+    <div class="container-fluid p-0 m-0 bgc-body-color">
+        <div class="container bgc-flex" style="background:url(./img/手機index_img/marqueeBG1.png);">
+            <div class="row p-0 m-0">
+                <div class="text-center" style="width: 12%;padding-top: 0.1em;">
+                    <img src="./img/手機index_img/marqueeA.png" class="img-fluid" alt="">
+                </div>
+                <div class="" style="width: 88%;">
+                    <marquee direction="left" height="30" scrollamount="5" behavior="left" class="text-light h-100 pt-1"
+                        onmouseover="this.stop()" onmouseout="this.start()">
+                        【維護公告】 親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒    【存款公告】
+                        開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可    【存款公告】
+                        敬愛的卡利會員您好，卡利娛樂城為防堵詐騙氾濫、保障會員資金安全，在此提醒：信用卡、ATM轉帳、VIP專用帳戶存款等服務，務必使用「本人帳戶」！若使用非本人帳戶存款，將一律扣除處理費用後退還本金，感謝您的配合。    【維護公告】
+                        親愛的會員您好，AV影城將於2020/12/14正式下架，造成不便敬請見諒。    【取款公告】
+                        親愛的卡利會員您好，由於體育注單會因改判賽事等因素，而進行注單重新結算，因此即日起，卡利娛樂城進行出款時，體育相關注單須全數派彩完畢才處理支付款項，若玩家手上有未派彩注單，麻煩您耐心等候，如有相關疑問、歡迎諮詢24H線上客服，謝謝您。
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0 m-0 bgc-flex-v" style="background:url(./img/桌機index_img/BG1.png);">
+        <div class="container">
+            <!-- 遊戲廳 -------------------------------------------------------------->
+            <div class="row px-3 py-1 py-md-3 py-lg-4 m-0">
+                <!-- 左 my-auto -->
+                <div class="col-12 col-md-6 my-auto">
+                    <div class="row">
+                        <div class="row m-0 pt-3">
+                            <div class="col-12">
+                                <a href="#">
+                                    <img src="./img/桌機index_img/GAME/GAME1.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row m-0 pt-3">
+                            <div class="col-6">
+                                <a href="#">
+                                    <img src="./img/桌機index_img/GAME/GAME2.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#">
+                                    <img src="./img/桌機index_img/GAME/GAME3.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右 -->
+                <div class="col-12 col-md-6 my-auto">
+                    <div class="row">
+                        <div class="row m-0 pt-3">
+                            <div class="col-6">
+                                <a href="#">
+                                    <img src="./img/桌機index_img/GAME/GAME4.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#">
+                                    <img src="./img/桌機index_img/GAME/GAME5.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row m-0 pt-3">
+                            <div class="col-6">
+                                <a href="#">
+                                    <img src="./img/桌機index_img/GAME/GAME6.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#">
+                                    <img src="./img/桌機index_img/GAME/GAME7.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sec -------------------------------------------------------------->
+            <div class="row px-3 py-3 py-lg-4 m-0">
+                <!-- 左 -->
+                <div class="col-12 col-md-6 my-auto">
+                    <img src="./img/桌機index_img/Sec 1.png" class="img-fluid" alt="">
+                </div>
+                <!-- 右 -->
+                <div class="col-12 col-md-6 my-auto">
+                    <img src="./img/桌機index_img/Sec 2.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <!-- sec -------------------------------------------------------------->
+
+        </div>
+    </div>
+
+
+    <!-- 公用 -->
+    <div class="container-fluid p-0 m-0 bgc-body-color">
+        <div class="container bgc-flex" style="background:url(./img/手機index_img/marqueeBG1.png);">
+            <div class="row p-0 m-0">
+
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
