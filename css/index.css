@@ -93,16 +93,3 @@
     transform: translateY(108%);
     background-color: #fd9cac;
 }
-
-.bg-cover:hover {
-    /* outline: none; */
-    /* border-color: transparent; */
-    /* box-shadow: none; */
-    /* border: 1px solid;
-    border-radius: 15px; */
-    background-color: #fd788e;
-}
-
-.bg-i-purple {
-    background-color: #9383f3;
-}
