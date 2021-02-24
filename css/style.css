@@ -51,6 +51,8 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
 
 /* 通用 -------------------------------------------------------- */
 
+/* 遊戲背景 */
+
 .bgc-flex {
     position: relative;
     background: no-repeat;
@@ -87,7 +89,51 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
     letter-spacing: .2em;
 }
 
+.textPink {
+    color: #fb98ac;
+}
+
+.textPurple {
+    color: #9383f3;
+}
+
 /* body -------------------------------------------------------- */
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #fff;
+    content: "/";
+}
+
+/* MD breadcrumb -------------------------------------------------------- */
+.breadcrumb {
+    background-color: transparent;
+}
+
+/* Blog -------------------------------------------------------- */
+
+.BlogGameBg {
+    background: linear-gradient(180deg, #fff4e5 0%, #ffe9cc 100%);
+    color: #ffffff;
+}
+
+.BlogGameTColor {
+    color: #fd788e;
+}
+
+.pt-2 a .BlogGameTColor:hover {
+    color: red;
+}
+
+.rowEllipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* 多行加下列 */
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
 
 /* index -------------------------------------------------------- */
 
@@ -97,4 +143,8 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
 
 .bgc-body-color {
     background-color: #ebdef2;
+}
+
+.fsz-08 {
+    font-size: 0.8em;
 }

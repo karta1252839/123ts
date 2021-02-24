@@ -64,3 +64,45 @@
 .hamburg-border-bottom {
     border-bottom: 2px solid #d8cac5b4;
 }
+
+.BMaintenanceTime {
+    /* width: 50px;
+    height: 145px; */
+    margin-left: -8px;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateY(170%);
+}
+
+.BMaintenanceTime:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+    border: 1px solid;
+}
+
+.contactUs {
+    width: 50px;
+    /* height: 165px; */
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateY(108%);
+    background-color: #fd9cac;
+}
+
+.bg-cover:hover {
+    /* outline: none; */
+    /* border-color: transparent; */
+    /* box-shadow: none; */
+    /* border: 1px solid;
+    border-radius: 15px; */
+    background-color: #fd788e;
+}
+
+.bg-i-purple {
+    background-color: #9383f3;
+}
