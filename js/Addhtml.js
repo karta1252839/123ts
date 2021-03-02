@@ -156,7 +156,7 @@ function PageHeader() {
     document.writeln("");
     document.writeln("    <!-- 聯繫我們 -->");
     document.writeln("    <div class=\'d-none d-md-block\'>");
-    document.writeln("        <div class=\'contactUs p-1\'>");
+    document.writeln("        <div class=\'contactUs p-1 rounded-right w3-round-large\'>");
     document.writeln("            <!-- 1 -->");
     document.writeln("            <a href=\'https://line.me/R/ti/p/%40661quprf\' class=\'btn px-0 pt-1 pb-3 m-0 bg-cover border-bottom\'");
     document.writeln("                target=\'_blank\'>");

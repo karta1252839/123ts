@@ -72,12 +72,13 @@
             filter: drop-shadow(.8px 1.2px 6.5px #fd788e);
         }
 
+        .slotActive {
+            filter: drop-shadow(.8px 1.2px 6.5px #fd788e);
+        }
     </style>
 </head>
 
 <body>
-
-
 
     <!-- Header -->
     <script>PageHeader();</script>
@@ -742,6 +743,13 @@
         </div>
     </div>
 
+    <!--  -->
+    <script>
+        $(".noActive-a a img").click(function () {
+            $(".noActive-a a img").removeClass("slotActive");
+            $(this).addClass("slotActive");
+        });
+    </script>
     <!-- Footer -->
     <script>PCFooter();</script>
     <script>MDFooter();</script>

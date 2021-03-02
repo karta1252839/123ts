@@ -93,3 +93,12 @@
     transform: translateY(108%);
     background-color: #fd9cac;
 }
+
+.bg-cover:hover {
+    /* background-color: #fd788e; */
+    filter: drop-shadow(.8px 1.2px 5px #ffb8ea);
+}
+
+.bg-i-purple {
+    background-color: #9383f3;
+}
