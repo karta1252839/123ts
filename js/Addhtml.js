@@ -439,7 +439,7 @@ function PCFooter() {
     document.writeln("<!-- 電腦板 footer ------------------------------------------------------------------------>");
     document.writeln("    <!-- footer -->");
     document.writeln("    <div class=\'container-fluid d-none d-md-block p-0 m-0\'");
-    document.writeln("        style=\'background:url(../img/桌機index_img/BG2.png) #efe9e9 center top;\'>");
+    document.writeln("        style=\'background:url(../img/桌機index_img/BG2.png) #eae0f1 center top;\'>");
     document.writeln("        <div class=\'container\'>");
     document.writeln("            <!-- Title -->");
     document.writeln("            <p class=\'text-light lp2 pt-5 pb-3 centerCenter h5 uk-text-bold\'>合作夥伴</p>");
@@ -555,6 +555,30 @@ function PCFooter() {
 
 // MD Footer
 function MDFooter() {
+    document.writeln("<!-- 手機板 footer ------------------------------------------------------------------------>");
+    document.writeln("    <!-- fixed bottom -->");
+    document.writeln("    <div class=\'container-fluid d-md-none p-0 m-0 fixed-bottom bgc-body-color\'>");
+    document.writeln("        <div class=\'container\'>");
+    document.writeln("            <div class=\'row p-0 m-0\' id=\'footerHCopy\'>");
+    document.writeln("                <div class=\'col centerCenter py-2 mx-3\'>");
+    document.writeln("                    <img src=\'../img/手機index_img/bottom.png\' class=\'img-fluid\' alt=\'\'>");
+    document.writeln("                </div>");
+    document.writeln("                <div class=\'col centerCenter py-2 mx-3\'>");
+    document.writeln("                    <img src=\'../img/手機index_img/bottom1.png\' class=\'img-fluid\' alt=\'\'>");
+    document.writeln("                </div>");
+    document.writeln("                <div class=\'col centerCenter py-2 mx-3\'>");
+    document.writeln("                    <img src=\'../img/手機index_img/bottom2.png\' class=\'img-fluid\' alt=\'\'>");
+    document.writeln("                </div>");
+    document.writeln("                <div class=\'col centerCenter py-2 mx-3\'>");
+    document.writeln("                    <img src=\'../img/手機index_img/bottom3.png\' class=\'img-fluid\' alt=\'\'>");
+    document.writeln("                </div>");
+    document.writeln("            </div>");
+    document.writeln("        </div>");
+    document.writeln("    </div>");
+}
+
+// MD Blog Footer
+function MDBlogFooter() {
     document.writeln("<!-- 手機板 footer ------------------------------------------------------------------------>");
     document.writeln("    <!-- fixed bottom -->");
     document.writeln("    <div class=\'container-fluid d-md-none p-0 m-0 fixed-bottom bgc-body-color\'>");

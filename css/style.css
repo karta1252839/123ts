@@ -104,7 +104,30 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
     content: "/";
 }
 
+.text-123ts-color {
+    color: #fd788e;
+}
+
+.bg-123ts {
+    background-color: #fd788e;
+}
+
+.Blog-name-active:hover {
+    background-color: #fd788e !important;
+    color: #fff !important;
+}
+
+.Blog-name-active-a {
+    background-color: #fd788e !important;
+    color: #fff !important;
+}
+
+.fsz-08 {
+    font-size: 0.8em;
+}
+
 /* MD breadcrumb -------------------------------------------------------- */
+
 .breadcrumb {
     background-color: transparent;
 }
@@ -135,6 +158,23 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
     white-space: normal;
 }
 
+.rowBlogEllipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* 多行加下列 */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.btn-blog-active:hover {
+    background-color: #fd788e;
+    border-radius: 5px;
+    color: #fff !important;
+}
+
 /* index -------------------------------------------------------- */
 
 .bgc-header-color {
@@ -143,8 +183,4 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
 
 .bgc-body-color {
     background-color: #ebdef2;
-}
-
-.fsz-08 {
-    font-size: 0.8em;
 }
