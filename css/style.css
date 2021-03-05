@@ -97,6 +97,10 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
     color: #9383f3;
 }
 
+.textOrange {
+    color: #ffbe67;
+}
+
 /* body -------------------------------------------------------- */
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -123,7 +127,11 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
 }
 
 .fsz-08 {
-    font-size: 0.8em;
+    font-size: 0.8em !important;
+}
+
+.fsz-06 {
+    font-size: 0.6em !important;
 }
 
 /* MD breadcrumb -------------------------------------------------------- */
