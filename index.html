@@ -8,6 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon1.ico">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -34,9 +37,27 @@
 
     <title>123ts</title>
     <style>
-        /* overflow scrollbar */
         ::-webkit-scrollbar {
-            display: none;
+            /* display: none; */
+            width: 10px;
+        }
+
+        /* 長條 */
+        ::-webkit-scrollbar-track {
+            /* box-shadow: inset 0 0 5px grey; */
+            border-radius: 10px;
+            background: #aaa;
+        }
+
+        /* 短條 */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(240, 167, 167);
+            border-radius: 10px;
+        }
+        
+        /* hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(210, 121, 121);
         }
     </style>
 </head>
@@ -58,10 +79,10 @@
                     <input class="ml-2" type="checkbox" name="記住" id="">
                     <p class="d-inline">記住</p>
                     <!-- 登入 -->
-                    <a href="../reb/page/indexLogin.html"><input class="input-size ml-2 text-center"
+                    <a href="./page/indexLogin.html"><input class="input-size ml-2 text-center"
                             style="background-image: url(./img/桌機index_img/btn登入.png);color: #efbe6c;" type="submit"
                             value="登入"></a>
-                    <a href="./header page/Signup.html"><input class="input-size ml-2 text-center"
+                    <a href="./header page/Signup.html" target="_black"><input class="input-size ml-2 text-center"
                             style="background-image: url(./img/桌機index_img/btn注冊.png);color: #fd788e;" type="button"
                             value="註冊"></a>
                 </div>
@@ -73,27 +94,35 @@
     <div class="container-fluid d-none d-lg-block p-0 bgc-header-color NavigationBorder">
         <div class="container">
             <div class="row" style="align-items:center;">
-                <div class="col-3">
-                    <a class="" href="./index.html"><img class="w-100" src="./img/桌機index_img/LOGO.png"></a>
+                <div class="col-3 centerCenter">
+                    <a class="" href="./index.html"><img class="" style="width: 60%;"
+                            src="/123ts/img/手機index_img/派大金LOGO2.png"></a>
                 </div>
                 <div class="col-9">
                     <div class="row mx-auto">
-                        <a class="col py-2 centerCenter listHove" href="./page/LiveCasino.html"><img class="img-fluid"
-                                src="./img/桌機index_img/list1.png" alt=""></a>
-                        <a class="col py-2 centerCenter listHove" href="./page/Sport.html"><img class="img-fluid"
-                                src="./img/桌機index_img/list2.png" alt=""></a>
-                        <a class="col py-2 centerCenter listHove" href="./page/Slot.html"><img class="img-fluid"
-                                src="./img/桌機index_img/list3.png" alt=""></a>
-                        <a class="col py-2 centerCenter listHove" href="./page/Bingo.html"><img class="img-fluid"
-                                src="./img/桌機index_img/list4.png" alt=""></a>
-                        <a class="col py-2 centerCenter listHove" href="./page/Fish.html"><img class="img-fluid"
-                                src="./img/桌機index_img/list5.png" alt=""></a>
-                        <a class="col py-2 centerCenter listHove" href="./page/Chess.html"><img class="img-fluid"
-                                src="./img/桌機index_img/list6.png" alt=""></a>
-                        <a class="col py-2 centerCenter listHove" href="./page/Movie.html"><img class="img-fluid"
-                                src="./img/桌機index_img/list7.png" alt=""></a>
-                        <a class="col py-2 centerCenter listHove" href="./page/Promotion.html"><img class="img-fluid"
-                                src="./img/桌機index_img/list8.png" alt=""></a>
+                        <a class="col py-2 centerCenter listHove" href="./page/LiveCasino.html">
+                            <img class="img-fluid" src="./img/桌機index_img/list1.png" alt="">
+                        </a>
+                        <a class="col py-2 centerCenter listHove" href="./page/Sport.html">
+                            <img class="img-fluid" src="./img/桌機index_img/list2.png" alt="">
+                        </a>
+                        <a class="col py-2 centerCenter listHove" href="./page/Slot.html">
+                            <img class="img-fluid" src="./img/桌機index_img/list3.png" alt="">
+                        </a>
+                        <a class="col py-2 centerCenter listHove" href="./page/Bingo.html">
+                            <img class="img-fluid" src="./img/桌機index_img/list4.png" alt=""></a>
+                        <a class="col py-2 centerCenter listHove" href="./page/Fish.html">
+                            <img class="img-fluid" src="./img/桌機index_img/list5.png" alt="">
+                        </a>
+                        <a class="col py-2 centerCenter listHove" href="./page/Chess.html">
+                            <img class="img-fluid" src="./img/桌機index_img/list6.png" alt="">
+                        </a>
+                        <a class="col py-2 centerCenter listHove" href="./page/Movie.html">
+                            <img class="img-fluid" src="./img/桌機index_img/list7.png" alt="">
+                        </a>
+                        <a class="col py-2 centerCenter listHove" href="./page/Promotion.html">
+                            <img class="img-fluid" src="./img/桌機index_img/list8.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -326,12 +355,13 @@
                                     <!-- 派大金logo -->
                                     <div class="row m-0 px-5 py-3 bgc-body-color hamburg-border-bottom"
                                         style="box-shadow: 0 1px 5px rgba(83, 83, 83, 0.041);">
-                                        <img class="centerCenter img-fluid" src="./img/手機index_img/派大金LOGO2.png" alt="">
+                                        <img class="centerCenter img-fluid" src="/123ts/img/手機index_img/派大金LOGO2.png"
+                                            alt="">
                                     </div>
                                     <!-- LiveCasino -->
                                     <div class="row clearfix m-0">
                                         <div class="col-12 px-3 py-2 hamburg-border-bottom w-100">
-                                            <a class="py-3 pl-1 text-decoration-none" href="./page/LiveCasino.html">
+                                            <a class="py-3 pl-1 text-decoration-none" href="./index.html">
                                                 <img class="img-fluid pl-3" src="./img/手機index_img/icon1-home.png"
                                                     alt="">
                                                 <span class="pl-3" style="color: #fb98ac;">首頁</span>
@@ -356,7 +386,7 @@
                                     <div class="row clearfix m-0">
                                         <div class="col-12 px-3 py-2 hamburg-border-bottom w-100">
                                             <a class="py-3 pl-1 text-decoration-none"
-                                                href="./Features page/RepairTime.html">
+                                                href="./header page/4RepairTime.html">
                                                 <img class="img-fluid pl-3"
                                                     src="./img/手機index_img/icon3-maintenance.png" alt="">
                                                 <span class="pl-3" style="color: #7dd2e8;">維護時間</span>
@@ -368,7 +398,7 @@
                                     <!-- 常見問題 -->
                                     <div class="row clearfix m-0">
                                         <div class="col-12 px-3 py-2 hamburg-border-bottom w-100">
-                                            <a class="py-3 pl-1 text-decoration-none" href="./header page/FAQ.html">
+                                            <a class="py-3 pl-1 text-decoration-none" href="./header page/3FAQ.html">
                                                 <img class="img-fluid pl-3" src="./img/手機index_img/icon4-faq.png"
                                                     alt="">
                                                 <span class="pl-3" style="color: #9383f3;">常見問題</span>
@@ -380,7 +410,7 @@
                                     <!-- 部落格 -->
                                     <div class="row clearfix m-0">
                                         <div class="col-12 px-3 py-2 hamburg-border-bottom w-100">
-                                            <a class="py-3 pl-1 text-decoration-none" href="./Features page/Blog.html">
+                                            <a class="py-3 pl-1 text-decoration-none" href="./blog/LiveCasinoBlog.html">
                                                 <img class="img-fluid pl-3" src="./img/手機index_img/icon5-blog.png"
                                                     alt="">
                                                 <span class="pl-3" style="color: #fb98ac;">部落格</span>
@@ -393,7 +423,7 @@
                                     <div class="row clearfix m-0">
                                         <div class="col-12 px-3 py-2 hamburg-border-bottom w-100">
                                             <a class="py-3 pl-1 text-decoration-none"
-                                                href="./header page/AppDownload.html">
+                                                href="./header page/2AppDownload.html">
                                                 <img class="img-fluid pl-3" src="./img/手機index_img/icon6-appdl.png"
                                                     alt="">
                                                 <span class="pl-3" style="color: #efbe6c;">APP下載</span>
@@ -405,7 +435,7 @@
                                     <!-- 合營代理 -->
                                     <div class="row clearfix m-0">
                                         <div class="col-12 px-3 py-2 hamburg-border-bottom w-100">
-                                            <a class="py-3 pl-1 text-decoration-none" href="./header page/Agent.html">
+                                            <a class="py-3 pl-1 text-decoration-none" href="./header page/0Agent.html">
                                                 <img class="img-fluid pl-3" src="./img/手機index_img/icon7-agent.png"
                                                     alt="">
                                                 <span class="pl-3" style="color: #7dd2e8;">合營代理</span>
@@ -418,7 +448,7 @@
                                     <div class="row clearfix m-0">
                                         <div class="col-12 px-3 py-2 hamburg-border-bottom w-100">
                                             <a class="py-3 pl-1 text-decoration-none"
-                                                href="./Features page/AboutUs.html">
+                                                href="./header page/1AboutUs.html">
                                                 <img class="img-fluid pl-3"
                                                     src="./img/手機index_img/icon8-Vector Smart Object.png" alt="">
                                                 <span class="pl-3" style="color: #9383f3;">關於派大金</span>
@@ -447,7 +477,7 @@
                 <!-- LOGO -->
                 <div class="col-4 text-center">
                     <div class="text-center" style="margin-left: -5%;"><a href="./index.html"><img
-                                src="./img/手機index_img/派大金logo-01.png" alt="" class="img-fluid"></a></div>
+                                src="/123ts/img/手機index_img/派大金LOGO2.png" alt="" class="img-fluid"></a></div>
                 </div>
                 <!-- 24HR客服 -->
                 <div class="col-4">
@@ -530,12 +560,12 @@
     </div>
 
     <!-- 遊戲廳+sec+Shortcuts -->
-    <div class="container-fluid p-0 m-0 bgc-flex-v" style="background:url(./img/桌機index_img/BG1.png);">
+    <div class="container-fluid p-0 m-0 bgc-flex-v" style="background:url(./img/桌機index_img/BG1.png);" id="axc">
         <div class="container" style="padding-bottom: 5em;">
             <!-- 遊戲廳 -------------------------------------------------------------->
             <div class="row px-3 py-1 py-md-3 py-lg-4 m-0">
                 <!-- 左 my-auto -->
-                <div class="col-12 col-md-6 my-auto">
+                <div class="col-12 col-lg-6 my-auto">
                     <div class="row">
                         <div class="row m-0 pt-3">
                             <div class="col-12">
@@ -544,7 +574,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="row m-0 pt-3">
+                        <div class="row m-0 pt-3 justify-content-between">
                             <div class="col-6">
                                 <a href="./page/Sport.html">
                                     <img src="./img/桌機index_img/GAME/GAME2.png" class="img-fluid" alt="">
@@ -559,7 +589,7 @@
                     </div>
                 </div>
                 <!-- 右 -->
-                <div class="col-12 col-md-6 my-auto">
+                <div class="col-12 col-lg-6 my-auto">
                     <div class="row">
                         <div class="row m-0 pt-3">
                             <div class="col-6">
@@ -573,7 +603,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="row m-0 pt-3">
+                        <div class="row m-0 pt-3 justify-content-between">
                             <div class="col-6">
                                 <a href="./page/Chess.html">
                                     <img src="./img/桌機index_img/GAME/GAME6.png" class="img-fluid" alt="">
@@ -591,33 +621,48 @@
             <!-- sec -------------------------------------------------------------->
             <div class="row px-3 py-3 py-lg-4 m-0">
                 <!-- 左 -->
-                <div class="col-12 col-md-6 my-auto">
+                <div class="col-12 col-lg-6 my-auto">
                     <img src="./img/桌機index_img/Sec 1.png" class="img-fluid" alt="">
                 </div>
                 <!-- 右 -->
-                <div class="col-12 col-md-6 my-auto">
-                    <img src="./img/桌機index_img/Sec 2.png" class="img-fluid" alt="">
+                <div class="col-12 col-lg-6 my-auto">
+                    <div class="bg-123ts row w3-round-large p-3">
+                        <div class="col-12 centerCenter">
+                            <img src="/123ts/img/桌機index_img/title1.png" class="img-fluid" alt="">
+                            <p class="text-light py-2 text-center text-justify">超過2000會員的安全娛樂城，套利，違規行為判斷快
+                                速5分鐘内最速出款，每日可領500萬</p>
+                            <img src="/123ts/img/桌機index_img/title2.png" class="img-fluid" alt="">
+                            <p class="text-light py-2 text-center text-justify">游戲皆採用公平公正系統，玩家不會被坑殺</p>
+                            <img src="/123ts/img/桌機index_img/title3.png" class="img-fluid" alt="">
+                            <p class="text-light py-2 text-center text-justify">客服團隊經過專業受訓，保證玩家的娛樂城權益</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Shortcuts -------------------------------------------------------------->
             <div class="row px-2 py-2 py-lg-4 mx-4 bg-danger w3-round-large"
                 style="background-color: #ffbe67 !important;">
-                <a href="./header page/0Agent.html" class="col-4 col-md-2 my-auto py-2 py-md-0">
+                <a href="./header page/0Agent.html"
+                    class="col-6 col-sm-6 col-md-4 col-lg-2 my-auto py-2 py-md-1 py-lg-0">
                     <img src="./img/桌機index_img/Group 1.png" class="img-fluid" alt="">
                 </a>
-                <a href="./header page/1AboutUs.html" class="col-4 col-md-2 my-auto py-2 py-md-0">
+                <a href="./header page/1AboutUs.html"
+                    class="col-6 col-sm-6 col-md-4 col-lg-2 my-auto py-2 py-md-1 py-lg-0">
                     <img src="./img/桌機index_img/Group 2.png" class="img-fluid" alt="">
                 </a>
-                <a href="./header page/2AppDownload.html" class="col-4 col-md-2 my-auto py-2 py-md-0">
+                <a href="./header page/2AppDownload.html"
+                    class="col-6 col-sm-6 col-md-4 col-lg-2 my-auto py-2 py-md-1 py-lg-0">
                     <img src="./img/桌機index_img/Group 3.png" class="img-fluid" alt="">
                 </a>
-                <a href="./header page/3FAQ.html" class="col-4 col-md-2 my-auto py-2 py-md-0">
+                <a href="./header page/3FAQ.html" class="col-6 col-sm-6 col-md-4 col-lg-2 my-auto py-2 py-md-1 py-lg-0">
                     <img src="./img/桌機index_img/Group 4.png" class="img-fluid" alt="">
                 </a>
-                <a href="./header page/4RepairTime.html" class="col-4 col-md-2 my-auto py-2 py-md-0">
+                <a href="./header page/4RepairTime.html"
+                    class="col-6 col-sm-6 col-md-4 col-lg-2 my-auto py-2 py-md-1 py-lg-0">
                     <img src="./img/桌機index_img/Group 5.png" class="img-fluid" alt="">
                 </a>
-                <a href="./blog/LiveCasinoBlog.html" class="col-4 col-md-2 my-auto py-2 py-md-0">
+                <a href="./blog/LiveCasinoBlog.html"
+                    class="col-6 col-sm-6 col-md-4 col-lg-2 my-auto py-2 py-md-1 py-lg-0">
                     <img src="./img/桌機index_img/Group 6.png" class="img-fluid" alt="">
                 </a>
             </div>
@@ -638,6 +683,42 @@
                 )
             });
         </script> -->
+
+
+    <!-- back-to-top -->
+    <button id="back-to-top"
+        class="btn uk-position-fixed uk-position-bottom-right centerCenter d-none d-md-block rounded-circle"
+        style="background-color: #9383f3; height: 2.8em;width: 2.8em;bottom: 2.5em;right: 2.5em;"><i
+            class="fas fa-arrow-up text-light"></i></button>
+    <!-- 滾動選軸 -->
+    <script>
+        $(document).ready(function () {
+            // 最上方隱藏
+            $("#back-to-top").hide();
+            $(function () {
+                // 顯示
+                // $(window).scroll(function () {
+                //     if ($(window).scrollTop() > 30) {
+                //         $("#back-to-top").fadeIn(1500);
+                //         $("#back-to-bottom").fadeOut(1000);
+                //     } else {
+                //         $("#back-to-top").fadeOut(1000);
+                //         $("#back-to-bottom").fadeIn(1500);
+                //     }
+                // });
+                // 滾動
+                $("#back-to-top").click(function () {
+                    // 捲動最上面
+                    $('body,html').animate({ scrollTop: 0 }, 1000);
+                    // 捲動固定ID
+                    // $('body,html').animate({ scrollTop: $('#axc').offset().top }, 1000);
+                    return false;
+                });
+            });
+        });
+
+    </script>
+
 
     <!-- 電腦板 footer ------------------------------------------------------------------------>
     <!-- footer -->
@@ -761,16 +842,24 @@
         <div class="container">
             <div class="row p-0 m-0" id="footerHCopy">
                 <div class="col centerCenter py-2 mx-3">
-                    <img src="./img/手機index_img/bottom.png" class="img-fluid" alt="">
+                    <a href="/123ts/index.html">
+                        <img src="/123ts/img/手機index_img/bottom.png" class="img-fluid" alt="">
+                    </a>
                 </div>
                 <div class="col centerCenter py-2 mx-3">
-                    <img src="./img/手機index_img/bottom1.png" class="img-fluid" alt="">
+                    <a href="/123ts/page/Promotion.html">
+                        <img src="/123ts/img/手機index_img/bottom1.png" class="img-fluid" alt="">
+                    </a>
                 </div>
                 <div class="col centerCenter py-2 mx-3">
-                    <img src="./img/手機index_img/bottom2.png" class="img-fluid" alt="">
+                    <a href="/123ts/page/indexLoginPage.html">
+                        <img src="/123ts/img/手機index_img/bottom2.png" class="img-fluid" alt="">
+                    </a>
                 </div>
                 <div class="col centerCenter py-2 mx-3">
-                    <img src="./img/手機index_img/bottom3.png" class="img-fluid" alt="">
+                    <a href="/123ts/header page/Signup.html">
+                        <img src="/123ts/img/手機index_img/bottom3.png" class="img-fluid" alt="">
+                    </a>
                 </div>
             </div>
         </div>

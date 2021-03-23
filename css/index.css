@@ -91,7 +91,7 @@
     right: 0;
     top: 0;
     transform: translateY(108%);
-    background-color: #fd9cac;
+    background-color: rgba(235, 148, 172, 0.9);
 }
 
 .bg-cover:hover {

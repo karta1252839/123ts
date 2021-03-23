@@ -69,6 +69,21 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
     background-size: cover;
 }
 
+/* 遊戲背景 */
+
+.game-flex {
+    position: relative;
+    background: no-repeat;
+    background-size: 100% 100%;
+}
+
+.game-v-flex {
+    position: relative;
+    background: no-repeat;
+    background-size: 100% auto;
+}
+
+/*  */
 .centerCenter {
     text-align: center !important;
     justify-content: center !important;
