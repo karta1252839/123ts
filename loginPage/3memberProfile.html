@@ -34,13 +34,13 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/index.css">
 
-    <title>登入條 indexLogin</title>
+    <title>會員資料</title>
     <style>
         .gradientBtn {
             background: linear-gradient(270deg, #eecda3 0%, #ef629f 100%);
         }
 
-        .gradientBtnA {
+        .gradientBtnV {
             background: linear-gradient(180deg, #eecda3 0%, #ef629f 100%);
         }
 
@@ -48,6 +48,10 @@
             color: #fff;
             background-color: #fd788e;
             border-radius: 15px;
+        }
+
+        .bg-input {
+            background: #fff;
         }
     </style>
 </head>
@@ -58,17 +62,55 @@
         <script>PageHeader();</script>
     </div>
 
+    <!-- MD history.back ------------------------------------------------------------------------>
+    <div class="d-md-none w-100 py-1" style="background-color: #9383f3;">
+        <nav aria-label="breadcrumb">
+            <ul class="d-flex py-0 py-sm-1">
+                <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
+                    <i class="fas fa-angle-left text-light fa-lg"></i>
+                </button>
+                <li class="breadcrumb-item"><a href="/123ts/index.html" class="text-light">首頁</a></li>
+                <li class="breadcrumb-item"><a href="/123ts/loginPage/loginPage.html" class="text-light">會員中心</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <span class="text-light pl-2" id="copyTitle"></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="/123ts/js/history.js"></script>
+
     <!-- MD -->
     <div class="container-fluid px-0 py-0 m-0 bgc-flex d-md-none"
         style="background-image: url(../img/桌機index_img/BG1.png);height: 80vh;">
         <div class="container">
             <!--  -->
-            <div class="row py-3">
-                <a href="/123ts/loginPage/1EachStream.html" class="btn text-light col-10 centerCenter bg-123ts px-5 my-3">各廳流水</a>
-                <a href="/123ts/loginPage/2TransactionRecord.html" class="btn text-light col-10 centerCenter bg-123ts px-5 my-3">交易紀錄</a>
-                <a href="/123ts/loginPage/3memberProfile.html" class="btn text-light col-10 centerCenter bg-123ts px-5 my-3">會員資料</a>
-                <a href="/123ts/loginPage/4changePassword.html" class="btn text-light col-10 centerCenter bg-123ts px-5 my-3">更改密碼</a>
-                <a href="/123ts/index.html" class="btn text-light col-10 centerCenter bg-123ts px-5 my-3">登出</a>
+            <div class="p-3">
+                <p class="centerCenter text-secondary lp1">如需修改, 請洽在線客服</p>
+                <!-- 用戶名 -->
+                <form action="uk-margin" class="col-12 py-2" method="post">
+                    <label>
+                        <p class="">用戶名</p>
+                    </label>
+                    <input class="py-1 btn bg-input w-100 text-left" type="text">
+                </form>
+                <!-- 手機號碼 -->
+                <form action="uk-margin" class="col-12 py-2" method="post">
+                    <label>
+                        <span class="">手機號碼</span>
+                    </label>
+                    <input class="py-1 btn bg-input w-100 text-left" type="text">
+                </form>
+                <!-- LineID -->
+                <form action="uk-margin" class="col-12 py-2" method="post">
+                    <label>
+                        <span class="">LineID</span>
+                    </label>
+                    <input class="py-1 btn bg-input w-100 text-left" type="text">
+                </form>
+                <p class="col-12 centerCenter py-2 text-secondary">LineID 及 手機號碼</p>
+                <p class="col-12 centerCenter py-2 text-secondary">＊＊＊＊＊修改請洽客服＊＊＊＊＊</p>
+                <button class="uk-button gradientBtnV centerCenter text-light col-12
+                " type="button" style="border-radius: 5px;">前往</button>
             </div>
         </div>
     </div>
