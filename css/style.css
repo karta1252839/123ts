@@ -127,6 +127,10 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
     color: #fd788e;
 }
 
+.text-theme {
+    color: #fd788e;
+}
+
 .bg-123ts {
     background-color: #fd788e;
 }
@@ -208,6 +212,22 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
     background-color: #ebdef2;
 }
 
+.bgc-footer-color {
+    background-color: #e4ccf1;
+}
+
 .gradientBtnA {
     background: linear-gradient(180deg, #eecda3 0%, #ef629f 100%);
+}
+
+/*  */
+.filter {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.35))
+}
+.filter_hover:hover {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.35))
+}
+
+.blogHover:hover {
+    color: #9383f3;
 }
