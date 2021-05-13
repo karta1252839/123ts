@@ -60,6 +60,11 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
     background-size: cover;
 }
 
+.bgc {
+    background: no-repeat;
+    background-size: cover;
+}
+
 .bgc-flex-v {
     position: relative;
     background: no-repeat fixed center;

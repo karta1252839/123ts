@@ -1512,3 +1512,19 @@ function bannerHeader() {
     document.writeln("        </div>");
     document.writeln("    </div>");
 }
+
+// Blog
+function Blog() {
+    document.writeln("<div class=\'col-12 mx-0 py-4 px-5 my-2 w3-round-large BlogGameBg\'>");
+    document.writeln("                    <a href=\'/blog/LiveCasinoBlogPage.html\'>");
+    document.writeln("                        <p class=\'w3-large pb-2 text-justify text-theme uk-text-bold lp1 btn blogHover\'>");
+    document.writeln("                            球版分析-世界盃獨家投注教學！</p>");
+    document.writeln("                    </a>");
+    document.writeln("                    <div class=\'pt-2\'>");
+    document.writeln("                        <span class=\'text-theme pl-3\'>2020.09.17</span>");
+    document.writeln("                        <a href=\'/blog/LiveCasinoBlogPage.html\'>");
+    document.writeln("                            <span class=\'float-right btn mt-0 pt-0 text-theme blogHover\'>更多詳情 ></span>");
+    document.writeln("                        </a>");
+    document.writeln("                    </div>");
+    document.writeln("                </div>");
+}
